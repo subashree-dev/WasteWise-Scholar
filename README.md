@@ -34,3 +34,5 @@ WasteWise Scholar helps students reduce unnecessary paper printing by providing:
 Subashree S
 B.Tech Artificial Intelligence & Data Science
 EEC, Chennai
+
+Internship Project - WasteWise Scholar
