@@ -1,0 +1,98 @@
+
+<style>
+  .ww4 { font-family: var(--font-sans); padding: 0 0 2rem; }
+  .slbl4 { font-size: 11px; font-weight: 500; color: var(--color-text-secondary); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 6px; }
+  .stitle4 { font-size: 18px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 1.5rem; }
+  .pf4 { background: var(--color-background-secondary); border: 0.5px solid var(--color-border-tertiary); border-radius: 20px; padding: 1.5rem 1rem; max-width: 360px; margin: 0 auto; }
+  .nav4 { display: flex; align-items: center; gap: 6px; font-size: 13px; color: #1D9E75; font-weight: 500; margin-bottom: 1rem; }
+  .hero-score { background: #085041; border-radius: 14px; padding: 16px; text-align: center; margin-bottom: 1rem; }
+  .score-label { font-size: 12px; color: #9FE1CB; margin-bottom: 6px; }
+  .score-circle-wrap { display: flex; justify-content: center; margin-bottom: 8px; }
+  .score-ring { width: 80px; height: 80px; border-radius: 50%; background: conic-gradient(#1D9E75 0% 82%, #0F6E56 82% 100%); display: flex; align-items: center; justify-content: center; }
+  .score-inner { width: 56px; height: 56px; border-radius: 50%; background: #085041; display: flex; align-items: center; justify-content: center; flex-direction: column; }
+  .score-num { font-size: 20px; font-weight: 500; color: #E1F5EE; line-height: 1; }
+  .score-out { font-size: 10px; color: #5DCAA5; }
+  .score-badge { display: inline-block; background: #1D9E75; color: #E1F5EE; font-size: 12px; font-weight: 500; padding: 4px 14px; border-radius: 20px; }
+  .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 1rem; }
+  .stat-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: 12px; padding: 12px 10px; }
+  .stat-icon { font-size: 18px; color: #1D9E75; margin-bottom: 6px; }
+  .stat-num { font-size: 20px; font-weight: 500; color: var(--color-text-primary); }
+  .stat-lbl { font-size: 11px; color: var(--color-text-secondary); margin-top: 2px; }
+  .sec4 { font-size: 13px; font-weight: 500; color: var(--color-text-secondary); margin-bottom: 8px; }
+  .insight-list { display: flex; flex-direction: column; gap: 6px; margin-bottom: 1rem; }
+  .insight-row { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: 10px; padding: 10px 12px; display: flex; align-items: flex-start; gap: 10px; font-size: 12px; color: var(--color-text-primary); line-height: 1.5; }
+  .ins-icon { font-size: 16px; color: #1D9E75; flex-shrink: 0; margin-top: 1px; }
+  .progress-section { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: 12px; padding: 12px; margin-bottom: 1rem; }
+  .prog-label { font-size: 12px; color: var(--color-text-secondary); margin-bottom: 6px; display: flex; justify-content: space-between; }
+  .prog-bar-bg { height: 8px; background: #E1F5EE; border-radius: 20px; overflow: hidden; }
+  .prog-bar-fill { height: 100%; border-radius: 20px; background: #1D9E75; }
+  .share-btn { background: #1D9E75; color: #E1F5EE; border: none; border-radius: 10px; padding: 11px 0; font-size: 14px; font-weight: 500; width: 100%; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; }
+  .tab-row { display: flex; gap: 0; margin-bottom: 1rem; border: 0.5px solid var(--color-border-tertiary); border-radius: 10px; overflow: hidden; }
+  .tab { flex: 1; padding: 7px 0; font-size: 12px; font-weight: 500; text-align: center; cursor: pointer; color: var(--color-text-secondary); background: var(--color-background-primary); border: none; }
+  .tab.active { background: #1D9E75; color: #E1F5EE; }
+</style>
+<div class="ww4">
+  <h2 class="sr-only">WasteWise Scholar — Screen 4: Sustainability Impact Dashboard</h2>
+  <p class="slbl4">Screen 4 of 4</p>
+  <p class="stitle4">Sustainability Impact Dashboard</p>
+
+  <div class="pf4">
+    <div class="nav4"><i class="ti ti-arrow-left" style="font-size:15px;" aria-hidden="true"></i> Back to recommendation</div>
+
+    <div class="hero-score">
+      <div class="score-label">Your sustainability score</div>
+      <div class="score-circle-wrap">
+        <div class="score-ring">
+          <div class="score-inner">
+            <span class="score-num">82</span>
+            <span class="score-out">/ 100</span>
+          </div>
+        </div>
+      </div>
+      <span class="score-badge"><i class="ti ti-leaf" style="font-size:12px; vertical-align:-1px; margin-right:4px;" aria-hidden="true"></i>Eco Champion</span>
+    </div>
+
+    <div class="tab-row">
+      <button class="tab active">This document</button>
+      <button class="tab">This week</button>
+      <button class="tab">All time</button>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon"><i class="ti ti-file-off" aria-hidden="true"></i></div>
+        <div class="stat-num">24</div>
+        <div class="stat-lbl">Pages saved</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="ti ti-trees" aria-hidden="true"></i></div>
+        <div class="stat-num">120g</div>
+        <div class="stat-lbl">Paper saved</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="ti ti-currency-rupee" aria-hidden="true"></i></div>
+        <div class="stat-num">₹18</div>
+        <div class="stat-lbl">Cost saved</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="ti ti-cloud" aria-hidden="true"></i></div>
+        <div class="stat-num">48g</div>
+        <div class="stat-lbl">CO₂ avoided</div>
+      </div>
+    </div>
+
+    <div class="progress-section">
+      <div class="prog-label"><span>Weekly goal progress</span><span style="color:#1D9E75; font-weight:500;">42 / 50 pages</span></div>
+      <div class="prog-bar-bg"><div class="prog-bar-fill" style="width:84%;"></div></div>
+    </div>
+
+    <div class="sec4">Environmental insights</div>
+    <div class="insight-list">
+      <div class="insight-row"><i class="ti ti-droplet" class="ins-icon" style="font-size:16px; color:#1D9E75; flex-shrink:0;" aria-hidden="true"></i>Printing 24 fewer pages saved approx. 4.8 litres of water used in paper production.</div>
+      <div class="insight-row"><i class="ti ti-bolt" class="ins-icon" style="font-size:16px; color:#1D9E75; flex-shrink:0;" aria-hidden="true"></i>Digital study uses 94% less energy than operating a laser printer for the same content.</div>
+      <div class="insight-row"><i class="ti ti-award" class="ins-icon" style="font-size:16px; color:#1D9E75; flex-shrink:0;" aria-hidden="true"></i>You are in the top 15% of WasteWise users at your college this month!</div>
+    </div>
+
+    <button class="share-btn"><i class="ti ti-share" style="font-size:15px;" aria-hidden="true"></i>Share my eco impact</button>
+  </div>
+</div>

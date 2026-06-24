@@ -1,0 +1,93 @@
+
+<style>
+  .ww-wrap { font-family: var(--font-sans); padding: 0 0 2rem; }
+  .screen-label { font-size: 11px; font-weight: 500; color: var(--color-text-secondary); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 6px; }
+  .screen-title { font-size: 18px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 1.5rem; }
+  .phone-frame { background: var(--color-background-secondary); border: 0.5px solid var(--color-border-tertiary); border-radius: 20px; padding: 1.5rem 1rem; max-width: 360px; margin: 0 auto; }
+  .topbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem; }
+  .topbar-logo { display: flex; align-items: center; gap: 6px; }
+  .logo-dot { width: 24px; height: 24px; border-radius: 6px; background: #1D9E75; display: flex; align-items: center; justify-content: center; }
+  .topbar-name { font-size: 14px; font-weight: 500; color: var(--color-text-primary); }
+  .topbar-sub { font-size: 11px; color: var(--color-text-secondary); }
+  .avatar { width: 32px; height: 32px; border-radius: 50%; background: #E1F5EE; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 500; color: #0F6E56; }
+  .section-head { font-size: 13px; font-weight: 500; color: var(--color-text-secondary); margin-bottom: 8px; }
+  .upload-zone { border: 1.5px dashed #1D9E75; border-radius: 14px; background: #E1F5EE; padding: 1.5rem 1rem; text-align: center; margin-bottom: 1rem; }
+  .upload-icon { font-size: 32px; color: #1D9E75; margin-bottom: 8px; }
+  .upload-title { font-size: 14px; font-weight: 500; color: #085041; margin-bottom: 4px; }
+  .upload-sub { font-size: 12px; color: #0F6E56; margin-bottom: 12px; }
+  .upload-btn { background: #1D9E75; color: #E1F5EE; border: none; border-radius: 8px; padding: 8px 20px; font-size: 13px; font-weight: 500; cursor: pointer; }
+  .formats-row { display: flex; gap: 6px; justify-content: center; flex-wrap: wrap; margin-top: 10px; }
+  .fmt-badge { background: #9FE1CB; color: #085041; font-size: 11px; font-weight: 500; padding: 3px 9px; border-radius: 20px; }
+  .recent-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: 12px; padding: 12px; margin-bottom: 8px; display: flex; align-items: center; gap: 10px; }
+  .file-icon-box { width: 36px; height: 36px; border-radius: 8px; background: #E1F5EE; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .file-name { font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px; }
+  .file-meta { font-size: 11px; color: var(--color-text-secondary); margin: 0; }
+  .file-badge { margin-left: auto; font-size: 10px; font-weight: 500; padding: 3px 8px; border-radius: 20px; }
+  .badge-done { background: #EAF3DE; color: #3B6D11; }
+  .badge-new { background: #FAEEDA; color: #854F0B; }
+  .eco-banner { background: #085041; border-radius: 12px; padding: 12px 14px; display: flex; align-items: center; gap: 10px; margin-bottom: 1rem; }
+  .eco-text { font-size: 12px; color: #9FE1CB; flex: 1; }
+  .eco-bold { font-size: 13px; font-weight: 500; color: #E1F5EE; display: block; margin-bottom: 2px; }
+</style>
+<div class="ww-wrap">
+  <h2 class="sr-only">WasteWise Scholar — Screen 1: Home / Upload PDF</h2>
+  <p class="screen-label">Screen 1 of 4</p>
+  <p class="screen-title">Home / Upload PDF</p>
+
+  <div class="phone-frame">
+    <div class="topbar">
+      <div class="topbar-logo">
+        <div class="logo-dot"><i class="ti ti-leaf" style="font-size:14px; color:#E1F5EE;" aria-hidden="true"></i></div>
+        <div>
+          <div class="topbar-name">WasteWise Scholar</div>
+          <div class="topbar-sub">AI Study Assistant</div>
+        </div>
+      </div>
+      <div class="avatar">SB</div>
+    </div>
+
+    <div class="eco-banner">
+      <i class="ti ti-plant" style="font-size:22px; color:#5DCAA5;" aria-hidden="true"></i>
+      <div class="eco-text">
+        <span class="eco-bold">You've saved 42 pages this week!</span>
+        Keep going — every page counts for the planet.
+      </div>
+    </div>
+
+    <div class="section-head">Upload study material</div>
+
+    <div class="upload-zone">
+      <div class="upload-icon"><i class="ti ti-cloud-upload" aria-hidden="true"></i></div>
+      <div class="upload-title">Drop your file here</div>
+      <div class="upload-sub">or tap to browse from your device</div>
+      <button class="upload-btn"><i class="ti ti-upload" style="font-size:13px; vertical-align:-1px; margin-right:5px;" aria-hidden="true"></i>Choose file</button>
+      <div class="formats-row">
+        <span class="fmt-badge">PDF</span>
+        <span class="fmt-badge">DOCX</span>
+        <span class="fmt-badge">PPT</span>
+        <span class="fmt-badge">TXT</span>
+      </div>
+    </div>
+
+    <div class="section-head">Recent uploads</div>
+
+    <div class="recent-card">
+      <div class="file-icon-box"><i class="ti ti-file-type-pdf" style="font-size:18px; color:#1D9E75;" aria-hidden="true"></i></div>
+      <div>
+        <p class="file-name">Data_Structures_Unit4.pdf</p>
+        <p class="file-meta">2.3 MB · 38 pages · Yesterday</p>
+      </div>
+      <span class="file-badge badge-done">Analysed</span>
+    </div>
+
+    <div class="recent-card">
+      <div class="file-icon-box"><i class="ti ti-file-type-doc" style="font-size:18px; color:#185FA5;" aria-hidden="true"></i></div>
+      <div>
+        <p class="file-name">OS_Module3_Notes.docx</p>
+        <p class="file-meta">1.1 MB · 24 pages · 2 days ago</p>
+      </div>
+      <span class="file-badge badge-new">Pending</span>
+    </div>
+
+  </div>
+</div>

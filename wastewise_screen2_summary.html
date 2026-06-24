@@ -1,0 +1,100 @@
+
+<style>
+  .ww2 { font-family: var(--font-sans); padding: 0 0 2rem; }
+  .screen-label2 { font-size: 11px; font-weight: 500; color: var(--color-text-secondary); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 6px; }
+  .screen-title2 { font-size: 18px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 1.5rem; }
+  .pf2 { background: var(--color-background-secondary); border: 0.5px solid var(--color-border-tertiary); border-radius: 20px; padding: 1.5rem 1rem; max-width: 360px; margin: 0 auto; }
+  .nav-back { display: flex; align-items: center; gap: 6px; font-size: 13px; color: #1D9E75; font-weight: 500; margin-bottom: 1rem; }
+  .doc-header { background: #085041; border-radius: 12px; padding: 14px; margin-bottom: 1rem; }
+  .doc-title { font-size: 14px; font-weight: 500; color: #E1F5EE; margin-bottom: 4px; }
+  .doc-meta-row { display: flex; gap: 10px; flex-wrap: wrap; }
+  .doc-meta-pill { display: flex; align-items: center; gap: 4px; font-size: 11px; color: #9FE1CB; }
+  .meta-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin-bottom: 1rem; }
+  .meta-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: 10px; padding: 10px 8px; text-align: center; }
+  .meta-num { font-size: 18px; font-weight: 500; color: var(--color-text-primary); }
+  .meta-lbl { font-size: 10px; color: var(--color-text-secondary); margin-top: 2px; }
+  .sec-head2 { font-size: 13px; font-weight: 500; color: var(--color-text-secondary); margin-bottom: 8px; }
+  .summary-box { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: 12px; padding: 12px; margin-bottom: 1rem; font-size: 12px; color: var(--color-text-primary); line-height: 1.6; }
+  .topic-list { display: flex; flex-direction: column; gap: 6px; margin-bottom: 1rem; }
+  .topic-row { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: 10px; padding: 10px 12px; display: flex; align-items: center; gap: 10px; }
+  .topic-num { width: 22px; height: 22px; border-radius: 6px; background: #E1F5EE; font-size: 11px; font-weight: 500; color: #085041; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .topic-name { font-size: 12px; font-weight: 500; color: var(--color-text-primary); flex: 1; }
+  .topic-importance { font-size: 10px; font-weight: 500; padding: 2px 7px; border-radius: 20px; }
+  .imp-high { background: #9FE1CB; color: #085041; }
+  .imp-med { background: #FAC775; color: #633806; }
+  .cta-btn { background: #1D9E75; color: #E1F5EE; border: none; border-radius: 10px; padding: 11px 0; font-size: 14px; font-weight: 500; width: 100%; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; }
+</style>
+<div class="ww2">
+  <h2 class="sr-only">WasteWise Scholar — Screen 2: AI Summary Results</h2>
+  <p class="screen-label2">Screen 2 of 4</p>
+  <p class="screen-title2">AI Summary Results</p>
+
+  <div class="pf2">
+    <div class="nav-back"><i class="ti ti-arrow-left" style="font-size:15px;" aria-hidden="true"></i> Back to upload</div>
+
+    <div class="doc-header">
+      <div class="doc-title"><i class="ti ti-file-type-pdf" style="font-size:13px; vertical-align:-1px; margin-right:5px;" aria-hidden="true"></i>Data_Structures_Unit4.pdf</div>
+      <div class="doc-meta-row">
+        <span class="doc-meta-pill"><i class="ti ti-file-text" style="font-size:12px;" aria-hidden="true"></i>38 pages</span>
+        <span class="doc-meta-pill"><i class="ti ti-clock" style="font-size:12px;" aria-hidden="true"></i>~22 min read</span>
+        <span class="doc-meta-pill"><i class="ti ti-cpu" style="font-size:12px;" aria-hidden="true"></i>AI analysed</span>
+      </div>
+    </div>
+
+    <div class="meta-grid">
+      <div class="meta-card">
+        <div class="meta-num">38</div>
+        <div class="meta-lbl">Total pages</div>
+      </div>
+      <div class="meta-card">
+        <div class="meta-num">6</div>
+        <div class="meta-lbl">Key topics</div>
+      </div>
+      <div class="meta-card">
+        <div class="meta-num">22m</div>
+        <div class="meta-lbl">Read time</div>
+      </div>
+    </div>
+
+    <div class="sec-head2">AI-generated summary</div>
+    <div class="summary-box">
+      This document covers advanced data structures including trees, graphs, and hashing techniques. It explains traversal algorithms, complexity analysis, and real-world applications. Key exam areas include AVL trees, Dijkstra's algorithm, and hash collision resolution strategies.
+    </div>
+
+    <div class="sec-head2">Key topics extracted</div>
+    <div class="topic-list">
+      <div class="topic-row">
+        <div class="topic-num">1</div>
+        <span class="topic-name">AVL Trees & Rotations</span>
+        <span class="topic-importance imp-high">High</span>
+      </div>
+      <div class="topic-row">
+        <div class="topic-num">2</div>
+        <span class="topic-name">Graph Traversal (BFS/DFS)</span>
+        <span class="topic-importance imp-high">High</span>
+      </div>
+      <div class="topic-row">
+        <div class="topic-num">3</div>
+        <span class="topic-name">Hashing & Collision</span>
+        <span class="topic-importance imp-high">High</span>
+      </div>
+      <div class="topic-row">
+        <div class="topic-num">4</div>
+        <span class="topic-name">Dijkstra's Algorithm</span>
+        <span class="topic-importance imp-med">Medium</span>
+      </div>
+      <div class="topic-row">
+        <div class="topic-num">5</div>
+        <span class="topic-name">Heap Operations</span>
+        <span class="topic-importance imp-med">Medium</span>
+      </div>
+      <div class="topic-row">
+        <div class="topic-num">6</div>
+        <span class="topic-name">Complexity Analysis</span>
+        <span class="topic-importance imp-med">Medium</span>
+      </div>
+    </div>
+
+    <button class="cta-btn"><i class="ti ti-printer" style="font-size:15px;" aria-hidden="true"></i>Get print recommendation</button>
+  </div>
+</div>
